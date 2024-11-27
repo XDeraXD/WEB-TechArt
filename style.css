@@ -91,7 +91,7 @@ header{
     align-items: center;
     justify-content:space-between ;
     gap: 2em;
-    padding: 2em 0;
+    padding: 0em 0;
 }
 
 nav ul {
@@ -117,7 +117,23 @@ nav a:hover{
 }
 
 .hero .swiper-slide{
-    background: linear-gradient(90deg, rgba(255,255,255,0.9) 16.58%, rgba(255,255,255,0) 72.30%), url(IMG/belobog.jpg);
+    background: linear-gradient(90deg, rgba(255,255,255,0.9) 16.58%, rgba(255,255,255,0) 72.30%), url(IMG/inazuma.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .swiper-slide:nth-child(2) {
+    background: linear-gradient(90deg, rgba(255,255,255,0.9) 16.58%, rgba(255,255,255,0) 72.30%), 
+                url(IMG/NATLAN.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .swiper-slide:nth-child(3) {
+    background: linear-gradient(90deg, rgba(255,255,255,0.9) 16.58%, rgba(255,255,255,0) 72.30%), 
+                url(IMG/court.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -135,7 +151,7 @@ nav a:hover{
 .hero .container .row {
     position: absolute;
     right: 0;
-    bottom: 51.2px;
+    bottom: 76px;
     background-color: var(--cl--3--);
     padding: 2em 2em;
     text-align: center;
@@ -161,6 +177,7 @@ nav a:hover{
    bottom: 0;
    align-items: center;
    justify-content: flex-end;
+   
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -168,7 +185,7 @@ nav a:hover{
     font-size: 16px;
     color: var(--cl--1--);
     gap: 0.5em;
-    background: var(--cl--2--);
+    background: var(--cl--4--);
     padding: 1em 4em;
     width: unset;
     height: unset;
@@ -195,7 +212,7 @@ nav a:hover{
 .reputation-cards,
 .service-cards{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: clamp(2em, 5vw, 5em); /* Adjust spacing between cards */
+    gap: clamp(2em, 5vw, 5em);
     padding-top: 4em;
 }/* REPUTATION */
 .reputation, .project{
@@ -713,9 +730,9 @@ footer h5 {
         background-image: url(IMG/menu.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 30px;
-        width: 30px;
-        height: 30px;
+        background-size: 40px;
+        width: 40px;
+        height: 40px;
         z-index: 1000;
         transition: background-size 0.3s ease-in-out;
     }
@@ -723,8 +740,8 @@ footer h5 {
     .toggleMenu.active {
         position: fixed;
         right: 5%;
-        background-image: url(IMG/menu.png);
-        background-size: 25px;
+        background-image: url(IMG/back1.png);
+        background-size: 35px;
     }
 
     .navigation{
