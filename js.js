@@ -15,6 +15,11 @@ function toggleMenu() {
       nextEl: ".hero .swiper-button-next",
       prevEl: ".hero .swiper-button-prev",
     },
+    autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false, 
+      },
+      
   });
   //END swiper slider 1
   
@@ -71,6 +76,12 @@ function toggleMenu() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  
+    autoplay: {
+        delay: 3000, 
+        disableOnInteraction: false, 
+      },
+
     breakpoints: {
       640: {
         slidesPerView: 1,

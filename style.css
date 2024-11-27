@@ -829,25 +829,24 @@ footer h5 {
 
 @media (min-width: 1024px) {
     .service-cards {
-        grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
-        grid-template-rows: repeat(2, auto); /* Always 2 rows */
-        max-width: 1200px; /* Optional: Centered container width */
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, auto); 
+        max-width: 1200px;
         margin: 0 auto;
     }
 }
 
-/* Medium screens: Adjust to 2 columns */
 @media (max-width: 1024px) {
     .service-cards {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto; /* Adjust rows based on content */
+        grid-auto-rows: auto; 
     }
 }
 
 
 @media (max-width: 600px) {
     .service-cards {
-        grid-template-columns: 1fr; /* Single column */
+        grid-template-columns: 1fr; 
     }
 }
 
