@@ -121,6 +121,7 @@ nav a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
 .hero .swiper-slide:nth-child(2) {
@@ -129,6 +130,7 @@ nav a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
 .hero .swiper-slide:nth-child(3) {
@@ -137,6 +139,7 @@ nav a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
 .hero .container {
@@ -393,6 +396,8 @@ nav a:hover{
 .experience-cards {
     flex-direction: row;
     gap: 4em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .e-card {
@@ -418,7 +423,6 @@ nav a:hover{
     margin: 0;
 }
 
-/* Rest of your CSS remains the same */
 
 .e-card:nth-of-type(odd) {
     margin-right: auto;
@@ -699,7 +703,7 @@ footer h5 {
 
 .copy-right {
     background: var(--cl--3--);
-    padding: 2em o;
+    padding: 2em 0;
 }
 
 .copy-right p{
@@ -825,6 +829,7 @@ footer h5 {
     .footer-details {
         flex-direction: column;
     }
+    
 }
 
 @media (min-width: 1024px) {
@@ -847,6 +852,19 @@ footer h5 {
 @media (max-width: 600px) {
     .service-cards {
         grid-template-columns: 1fr; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .e-card {
+        flex: 1 1 calc(50% - 2em); 
+    }
+}
+
+@media (max-width: 480px) {
+    .e-card {
+        flex: 1 1 100%; 
     }
 }
 
